@@ -119,8 +119,7 @@ public final class Classpath {
             SearchAdvice advice)
           throws IOException {
         Enumeration[] e = new Enumeration[]{
-              cl.getResources(prefix),
-              cl.getResources(prefix + "MANIFEST.MF")
+              cl.getResources(prefix)
         };
         Set all = new LinkedHashSet();
         URL url;
